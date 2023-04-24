@@ -26,8 +26,8 @@ export const Post: FC<Props> = ({ post }) => {
             )}
 
             <div className="flex flex-col p-4 pb-4 text-left">
-                <h2 className="text-lg font-medium text-neon">{post.title}</h2>
-                <p className="mt-4 text-base break-words text-text">
+                <h2 className="text-lg font-medium text-white">{post.title}</h2>
+                <p className="mt-4 text-fun-gray text-base break-words text-text">
                     {post.brief.substring(0, 100)}...
                 </p>
             </div>
