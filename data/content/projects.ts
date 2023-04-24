@@ -22,7 +22,7 @@ const projects: Project[] = [
     id: 2,
     title: "Routelift",
     desc: "The Operating System for Last Mile Delivery Services.",
-    img: "/static/projects/Routelift.png",
+    img: "/static/projects/routelift.png",
     link: "https://Routelift.com/",
     tags: ["Typescript","React", "NextJS", "HTML"],
   },
