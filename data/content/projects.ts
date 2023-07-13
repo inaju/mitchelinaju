@@ -4,6 +4,21 @@ import { Project } from "types";
 const projects: Project[] = [
   {
     id: 0,
+    title: "Zwilt Store",
+    desc: "Get access to Top Tech Talent worldwide",
+    img: "/static/projects/zwilt-store.png",
+    link: "https://staging.zwilt.com/",
+    tags: [
+      "NextJS",
+      "Typescript",
+      "NextJS",
+      "AWS",
+      "Material UI",
+      "Styled Components",
+    ],
+  },
+  {
+    id: 1,
     title: "Grazac Academy",
     desc: "Grazac Academy gives you the opportunity to learn in-demand skills to build your tech career.",
     img: "/static/projects/grazac_academy.png",
@@ -11,23 +26,23 @@ const projects: Project[] = [
     tags: ["React", "NextJS", "SASS", "HTML"],
   },
   {
-    id: 1,
+    id: 2,
     title: "Zwilt Application",
     desc: "Talent Acquisition Suite that makes it easy for talent teams to connect companies with top talent.",
     img: "/static/projects/zwilt_application.png",
     link: "https://application.zwilt.com/",
-    tags: ["Typescript","React", "NextJS", "MaterialUI", "CSS"],
+    tags: ["Typescript", "React", "NextJS", "MaterialUI", "CSS"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Routelift",
     desc: "The Operating System for Last Mile Delivery Services.",
     img: "/static/projects/routelift.png",
     link: "https://Routelift.com/",
-    tags: ["Typescript","React", "NextJS", "HTML"],
+    tags: ["Typescript", "React", "NextJS", "HTML"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Keepup",
     desc: "Cloud based Note taking application that enables professionals sync their notes across platforms, guaranteed to boot your productivity",
     img: "/static/projects/keepup-screen.png",
@@ -36,7 +51,7 @@ const projects: Project[] = [
     tags: ["Javascript", "Firebase", "NextJS", "HTML", "Tailwind"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Vtuslot",
     desc: "Africa's first VTU trading platform, buy and sell on a simple and safe platform with trusted users.",
     img: "/static/projects/vtuslot.png",
@@ -44,17 +59,14 @@ const projects: Project[] = [
     github: "https://github.com/inaju/vtuslot",
     tags: ["React", "CSS", "Html"],
   },
-  
 ];
 
-export const allTags = []
+export const allTags = [];
 
 projects.forEach((project) => {
-  project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag))
+  project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag));
 });
 
-export const allKebabTags = allTags.map(tag => (
-  kebabCase(tag)
-))
+export const allKebabTags = allTags.map((tag) => kebabCase(tag));
 
-export default projects
+export default projects;
