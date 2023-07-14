@@ -2,21 +2,21 @@ import { kebabCase, kebabArray } from "@/utils/utils";
 import { Project } from "types";
 
 const projects: Project[] = [
-  {
-    id: 0,
-    title: "Zwilt Store",
-    desc: "Get access to Top Tech Talent worldwide",
-    img: "/static/projects/zwilt-store.png",
-    link: "https://staging.zwilt.com/",
-    tags: [
-      "NextJS",
-      "Typescript",
-      "NextJS",
-      "AWS",
-      "Material UI",
-      "Styled Components",
-    ],
-  },
+  // {
+  //   id: 0,
+  //   title: "Zwilt Store",
+  //   desc: "Get access to Top Tech Talent worldwide",
+  //   img: "/static/projects/zwilt-store.png",
+  //   link: "https://staging.zwilt.com/",
+  //   tags: [
+  //     "NextJS",
+  //     "Typescript",
+  //     "NextJS",
+  //     "AWS",
+  //     "Material UI",
+  //     "Styled Components",
+  //   ],
+  // },
   {
     id: 1,
     title: "Grazac Academy",
