@@ -30,15 +30,51 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
           // href="https://nextjs.org/favicon.ico"
           href="https://res.cloudinary.com/mitchelinaju/image/upload/v1689899976/mitchel-icon-32-bg_q6hrql.png"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta
+          name="twitter:creator"
+          content={NEXT_SEO_DEFAULT.twitter.handle}
+          key="twhandle"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:url"
+          content={NEXT_SEO_DEFAULT.openGraph.url}
+          key="ogurl"
+        />
+        <meta
+          property="og:image"
+          content={NEXT_SEO_DEFAULT.image}
+          key="ogimage"
+        />
+        <meta
+          property="og:site_name"
+          content={NEXT_SEO_DEFAULT.title}
+          key="ogsitename"
+        />
+        <meta
+          property="og:title"
+          content={NEXT_SEO_DEFAULT.title}
+          key="ogtitle"
+        />
+        <meta
+          property="og:description"
+          content={NEXT_SEO_DEFAULT.description}
+          key="ogdesc"
+        />
       </Head>
-      <DefaultSeoHeader
+      {/* <DefaultSeoHeader
         title={NEXT_SEO_DEFAULT.title}
         description={NEXT_SEO_DEFAULT.description}
         url={NEXT_SEO_DEFAULT.openGraph.url}
         // canonical={NEXT_SEO_DEFAULT.canonical}
         image={NEXT_SEO_DEFAULT.image}
         authorName={NEXT_SEO_DEFAULT.authorName}
-      />
+      /> */}
 
       <main className="p-5 w-full flex-1 text-center">
         <div className="hidden sm:block z-100">
