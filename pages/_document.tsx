@@ -1,12 +1,13 @@
+import { DefaultSeoHeader } from "@/components/seo-hoc/Index";
 import Document, { Head, Html, Main, NextScript } from "next/document";
+
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-         
-        </Head>
+        <Head></Head>
+       
         <body>
           <Main />
           <NextScript />
