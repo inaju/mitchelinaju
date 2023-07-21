@@ -17,5 +17,7 @@ export const NEXT_SEO_DEFAULT = {
     site: "@site",
     cardType: "summary_large_image",
   },
-  image: "../../public/static/seo-images/mitchel-og-image.png",
+  image:
+    "https://res.cloudinary.com/mitchelinaju/image/upload/v1689900202/mitchel-og-image_g3jl3z.png",
+  // image: "../../public/static/seo-images/mitchel-og-image.png",
 };
